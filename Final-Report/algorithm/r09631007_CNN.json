@@ -1,0 +1,162 @@
+{
+    "dataType":"cv",
+    "projectType":"classification",
+    "algoName":"r09631007_CNN",
+    "description": "Convolutional neural network",
+    "lib":"keras",
+    "param":[
+        {
+            "name":"layer_1_neuron",
+            "description":"number of neurons (filters of Convolutional Layer)",
+            "type":"int",
+            "lowerBound":16,
+            "upperBound":256,
+            "default":64
+        },
+        {
+            "name":"layer_1_activation",
+            "description":"activation function",
+            "type":"enum",
+            "list":["linear","tanh","relu","elu","softmax","selu"],
+            "default":"relu"
+        },
+        {
+            "name":"layer_1_dropout",
+            "description":"dropout function",
+            "type":"float",
+            "lowerBound":0,
+            "upperBound":1,
+            "default":0
+        },
+        {
+            "name":"layer_2_neuron",
+            "description":"number of neurons (filters of Convolutional Layer)",
+            "type":"int",
+            "lowerBound":2,
+            "upperBound":256,
+            "default":32
+        },
+        {
+            "name":"layer_2_activation",
+            "description":"activation function",
+            "type":"enum",
+            "list":["linear","tanh","relu","elu","softmax","selu"],
+            "default":"relu"
+        },
+        {
+            "name":"layer_2_dropout",
+            "description":"dropout function",
+            "type":"float",
+            "lowerBound":0,
+            "upperBound":1,
+            "default":0
+        },
+        {
+            "name":"layer_3_neuron",
+            "description":"number of neurons (filters of Convolutional Layer)",
+            "type":"int",
+            "lowerBound":2,
+            "upperBound":256,
+            "default":32
+        },
+        {
+            "name":"layer_3_activation",
+            "description":"activation function",
+            "type":"enum",
+            "list":["linear","tanh","relu","elu","softmax","selu"],
+            "default":"relu"
+        },
+        {
+            "name":"layer_3_dropout",
+            "description":"dropout function",
+            "type":"float",
+            "lowerBound":0,
+            "upperBound":1,
+            "default":0
+        },
+        {
+            "name":"layer_4_neuron",
+            "description":"number of neurons (filters of Convolutional Layer)",
+            "type":"int",
+            "lowerBound":2,
+            "upperBound":256,
+            "default":32
+        },
+        {
+            "name":"layer_4_activation",
+            "description":"activation function",
+            "type":"enum",
+            "list":["linear","tanh","relu","elu","softmax","selu"],
+            "default":"relu"
+        },
+        {
+            "name":"layer_4_dropout",
+            "description":"dropout function",
+            "type":"float",
+            "lowerBound":0,
+            "upperBound":1,
+            "default":0
+        },
+        {
+            "name":"layer_5_dense",
+            "description":"nn length of cnn flatten",
+            "type":"int",
+            "lowerBound":2,
+            "upperBound":512,
+            "default":128
+        },
+        {
+            "name":"layer_5_activation",
+            "description":"activation function",
+            "type":"enum",
+            "list":["linear","tanh","relu","elu","softmax","selu"],
+            "default":"relu"
+        },
+        {
+            "name":"layer_5_dropout",
+            "description":"dropout function",
+            "type":"float",
+            "lowerBound":0,
+            "upperBound":1,
+            "default":0
+        },
+        {
+            "name":"optimizer",
+            "description":"optimizer",
+            "type":"enum",
+            "list":["sgd","rmsprop","adagrad","adam"],
+            "default":"sgd"
+        },
+        {
+            "name":"batch_size",
+            "description":"batch size of training",
+            "type":"int",
+            "lowerBound":32,
+            "upperBound":256,
+            "default":80
+        },
+        {
+            "name":"epochs",
+            "description":"train epochs",
+            "type":"int",
+            "lowerBound":10,
+            "upperBound":300,
+            "default":50
+        }
+    ],
+    "input":[
+        {
+            "name": "image",
+            "description": "input data",
+            "type":"path",
+            "amount":"single"
+        }
+    ],
+    "output":[
+        {
+            "name": "Label",
+            "description": "output data",
+            "type":"classifiable"
+        }
+    ]
+}
