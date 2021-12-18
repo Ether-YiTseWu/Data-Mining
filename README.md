@@ -17,5 +17,6 @@ Min F-Score : 0.9992
 Min Confusion Matrix TP : 1  
                  
                  
-Click the below image, it's a Youtube Link directs to a traditional chinese presentation              
-              
+Click the below image, it's a Youtube Link directs to a traditional chinese presentation             
+               
+[![](https://github.com/tailer954/Data-Mining/blob/main/Final-Report/Final%20Img.png)](https://www.youtube.com/watch?v=OibadYiMk3A) 
